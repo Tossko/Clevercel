@@ -166,6 +166,32 @@ Se excluyó el estilo de hover para botones con la clase `.btn--extra-narrow`:
 }
 ```
 
+## Personalización de estilos del botón "Añadir al carrito"
+
+Si se requiere modificar los estilos visuales del botón **"Añadir al carrito"** (por ejemplo: colores, gradiente, fondo, etc.), estos cambios se pueden realizar directamente desde el archivo `custom.css` del tema.
+
+### Línea de referencia
+
+Buscar la **línea 190** dentro del archivo.
+Allí encontrarán un bloque similar al siguiente:
+
+```css
+.image-banner .btn--secondary,
+body .product-info__add-to-cart button.btn--secondary {
+  background: linear-gradient(
+      104deg,
+      var(--global-black) 60%,
+      rgba(255, 255, 255, 1) 60% 100%
+    )
+    no-repeat 100% 100%;
+  background-size: 300% 100%;
+  color: var(--global-black);
+}
+```
+
+Desde este bloque se pueden modificar los estilos del botón, incluyendo colores, gradientes y apariencia visual general.
+
+
 ---
 
 ## 6. 💳 Bloque “Métodos de pago”
